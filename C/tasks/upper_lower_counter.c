@@ -30,6 +30,6 @@ int main(void) {
     // Display the results
     printf("Number of uppercase letters: %d\n", uppercase);
     printf("Number of lowercase letters: %d\n", lowercase);
-
+    // Done
     return 0;
 }
