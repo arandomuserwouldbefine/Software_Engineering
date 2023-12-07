@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string.h>
 using namespace std;
 
 // Function to calculate and print the total price for Pizza
@@ -38,7 +39,7 @@ int main(void) {
     cout<<"\t1\tPizza\t\t90/-\n";
     cout<<"\t2\tBurger\t\t89/-\n";
     cout<<"\t3\tPani-Puri\t100/-\n";
-    cout<<("\t4\tDosa\t\t80/-\n";
+    cout<<"\t4\tDosa\t\t80/-\n";
 
     // Loop to take orders
     while (yn != 'n') {
@@ -69,15 +70,15 @@ int main(void) {
         // Clear input buffer
         while (getchar() != '\n');
 
-        printf("Do you want anything else? [y/n]: ");
-        scanf(" %c", &yn);  // Add a space before %c to consume the newline character
+        cout<<"Do you want anything else? [y/n]: ";
+        cin>>yn;  // Add a space before %c to consume the newline character
     }
 
     // Print the final receipt
-    printf("\n--------------------------------\n");
-    printf("Thank you\n");
-    printf("Your total is: %d\n", total);
-    printf("\n--------------------------------\n");
+    cout<<"\n--------------------------------\n";
+    cout<<"Thank you\n";
+    cout<<"Your total is:"<<total<<endl;
+    cout<<"\n--------------------------------\n";
 
     return 0;
 }
